@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes generator</title>
+    <link rel="stylesheet" href="exp-2.css">
+</head>
+<body>
+    <script type="javascript/text" src="exp-2.js"></script>
+    <div class="mainDiv">
+        <h1>Quotes Generator</h1>
+        <div id="quotesDiv"></div>
+        <div class="buttonDiv">
+            <button onClick="previousQuote()"> << Previous</button>
+            <button onClick="nextQuote()"> Next >></button>
+        </div>
+    </div>
+</body>
+</html>
