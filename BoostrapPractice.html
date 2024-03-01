@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Exp-4</title>
+  <link href="exp-4.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body style="background-color: #f1f1f1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col col-lg" id="col1">
+        <a href=" #" class="col col-sm-2"> About</a>
+        <a href="#" class="col col-sm-3"> Live News</a>
+        <a href="#" class="col col-sm-3"> News Video</a>
+        <a href="#" class="col col-sm-2"> Contact</a>
+        <a href="#" class="col col-sm-2"> Feedback</a>
+      </div>
+    </div>
+    <div class="row" style="background-image:url(news.jpg); background-size:cover;">
+      <div class="mx-auto">
+        <div class='mx-auto p-5 text-center' style="width:150px;">
+          <p>India's no. 1 news network.</p>
+        </div>
+        <p class="p-5 text-center">It is the best news network in the India. we commited to provide the best news and
+          information to the
+          people.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-md-3 rounded">
+        <video controls class="mw-100 p-1 rounded" >
+          <source src="news1.mp4" type="video/mp4">
+        </video>
+        <h5 class="text-center">Live News English</h5>
+        <p class="text-center">Discription</p>
+      </div>
+
+      <div class="col col-md-3 rounded rounded">
+        <video controls class="mw-100 p-1" >
+          <source src="news1.mp4" type="video/mp4">
+        </video>
+        <h5 class="text-center">Live News Hindi</h5>
+        <p class="text-center">Discription</p>
+      </div>
+
+      <div class="col col-md-3 rounded ">
+        <video controls class=" mw-100 p-1 rounded">
+          <source src="news1.mp4" type="video/mp4">
+        </video>
+        <h5 class="text-center">Debate English</h5>
+        <p class="text-center">Discription</p>
+      </div>
+
+      <div class="col col-md-3 rounded">
+        <video class=" mw-100 p-1 rounded" controls>
+          <source src="news1.mp4" type="video/mp4">
+        </video>
+        <h5 class="text-center">Debate Hindi</h5>
+        <p class="text-center">Discription</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col col-md-3 p-2 rounded">
+        <video controls class="mw-100 p-1 rounded">
+          <source src="news1.mp4" type="video/mp4">
+        </video>
+        <h5 class="text-center">Heading about Video</h5>
+        <p class="text-center">Discription</p>
+      </div>
+
+      <div class="col col-md-3 p-2 rounded">
+        <video controls class="mw-100 p-1 rounded">
+          <source src="news1.mp4" type="video/mp4">
+        </video>
+        <h5 class="text-center">Heading about Video</h5>
+        <p class="text-center">Discription</p>
+      </div>
+
+      <div class="col col-md-3 p-2 rounded">
+        <video controls class="mw-100 p-1 rounded">
+          <source src="news1.mp4" type="video/mp4">
+        </video>
+        <h5 class="text-center">Heading about Video</h5>
+        <p class="text-center">Discription</p>
+      </div>
+
+      <div class="col col-md-3 p-2 rounded rounded">
+        <video controls class="mw-100 p-1">
+          <source src="news1.mp4" type="video/mp4">
+        </video>
+        <h5 class="text-center">Heading about Video</h5>
+        <p class="text-center">Discription</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class='col col-md-6 mt-5'>
+        <h1>ABC News Agency</h1>
+        <p>example@gmail.com</p>
+        <p>+91-9876543210</p>
+        <p>UIC, Chandigarh University</p>
+        <p>Punjab PIN-140301</p>
+      </div>
+      <div class="col col-md-6">
+      <div class="row">
+        <div class="col col-md-6 p-1">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var videos = document.getElementsByTagName('video');
+    for (var i = 0; i < videos.length; i++) {
+      videos[i].addEventListener('click', function() {
+        window.open('news1.mp4', '_blank');
+      });
+    }
+  </script>
+</body>
+
+</html>
